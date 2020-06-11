@@ -1,0 +1,116 @@
+html{ 
+    overflow: scroll;
+}
+body{
+  background-color:#becbff;
+  font-family: poppins;
+  text-align: center;
+}
+footer{
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: #becbff;
+  color: rgb(10, 9, 9);
+  text-align: left;
+  padding: 10; 
+}
+.button {
+  padding: 10px;
+  background-color: rgb(30, 255, 116);
+  border: double 5px; 
+}
+.email{
+  height: 40px;
+  width: 300px;
+  padding: 10px;
+  background-color: rgb(225, 228, 231);
+  border: double 5px;
+  padding-left: 5%;
+}
+/*#####
+   NAV BAR SECTION  
+ #####*/
+.logo1{
+  border: hidden;
+  padding-right: 5%;
+}
+ul{
+  list-style-type: none;
+  padding: 2px;
+  overflow: hidden;
+  background-color: #ffffff96 ;
+  position: fixed;
+  top: 0%;
+  width: 100%;
+  height: 50px;
+  border: 3px solid #0064fad5;
+  }
+li{ 
+  float: left;
+  border-right: solid 5px black;
+  border-bottom: solid 5px black;
+  }
+li a{ 
+  display: block;
+  color:black;
+  text-align: center;
+  padding: 10px 50px;
+  text-decoration: none;
+  }
+li a:hover:not(.active) {
+  background-color: #111;
+  color: azure;
+  }
+.active {
+  background-color: #0064fad5 ;
+  }
+.navbar .search-container{
+  float: right;
+  }
+.navbar input[type=text]{
+  padding: 6px;
+  margin-top: 8px;
+  font-size: 20px;
+  border: solid #000000;
+  } 
+.navbar .search-container button
+  {
+  float: right;
+  padding:  3px;
+  margin-top: 8px;
+  margin-right: 60px;
+  background: #ddd;
+  font-size: 20px;
+  border: solid #000000;
+  cursor: pointer;
+  }
+ 
+   /*##### 
+     RIGHT CONTAINER SECTION 
+       #####*/
+  
+.flex-container-right {
+    display: flex;
+    flex-direction: column;
+    background-color: #050505;
+    padding: 10px;
+    width: 300;
+    margin-top: 100px;
+    margin-right: 0%;
+    flex-wrap: wrap;
+    float: right;
+    border: solid white 3px;
+    border-radius: 2%;
+    position: static;
+  }
+.flex-container-right .right-text{
+    background-color: #becbff;
+  }
+.flex-container-right iframe{
+    height:200px ;
+    width: 300px;
+    padding: 0;
+  }
+  

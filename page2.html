@@ -1,0 +1,120 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Top Picks</title>
+            <link rel="stylesheet" href="style.css">
+            <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+            <link rel="icon" href="images/icon.png">
+    <style>  
+    .text{
+        margin-top: 10%;
+    }
+    .container{
+        display: flex;
+        flex-direction: column;
+        background-color: whitesmoke;
+        width: 80%;
+        height: 500px;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 10%;
+        flex-wrap: wrap;
+        align-content: space-around;
+        text-align: center;
+        border: groove 10px #0064fad5;      
+    }
+    .box{
+        margin-top: auto;
+        margin-bottom: 8%;
+        border: solid rgb(0, 0, 0);
+        border-radius: 5%;     
+    }
+    .box:hover{       
+        transform: scale(1.5);
+    }
+    .card{
+        box-shadow: 10px rgb(0, 0, 0);
+        background-color: rgb(241, 235, 235);
+        box-shadow: 0px 30px 30px 0px rgb(5, 5, 5);
+        border: groove #0064fad5;
+        padding: 0%;
+        height: 220px;
+        width: 265px;
+    }
+    iframe{
+        height: 200px;
+        width: 255px;
+        padding: 0px;
+    }
+    </style>
+</head>
+<body>
+       <!-----------------------
+    ########  Navigation bar  #########
+  -------------------------->
+<div class="navbar" style="position: relative;">
+    <ul>
+        <li class="logo1"><img src="images/logo.png" alt="" width="120px" height="50px"></li>
+        <li style="border-left: solid black;"><a href="index.html">HOME</a></li>
+        <li><a class="active" href="page2.html">TOP PICKS</a></li>
+        <li><a href="about.html">ABOUT</a></li>
+        <li><a href="contact.html">CONTACT</a></li>
+     <div class="search-container">
+        <form action="#">
+            <input type="text" placeholder="Search"><button type="submit">🔍</button>
+        </form>
+    </div>
+    </ul>
+</div>
+    <div class="text">
+        <h1 style="font-size: 50px">⬇ This Weeks Top Picks ⬇</h1>
+    </div>
+<!-----------------------
+    ########  MAIN SECTION  #########
+  -------------------------->
+<div class="container">
+  <h1>Number #1</h1><pre>This weeks number 1 spot goes to
+a video that i havent even watched</pre>
+    <div class="box">
+        <div style="background-color: #f0a500;" class="card">
+            <iframe src="https://player.vimeo.com/video/407694202" width="640" height="360" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
+        </div>
+    </div>
+    <h1>Number #2</h1><pre>A close 2nd is another video
+ that i failed to watch</pre>
+    <div class="box">
+        <div style="background-color: #cacaca;" class="card">
+            <iframe src="https://player.vimeo.com/video/402698942" width="640" height="360" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
+        </div>
+    </div>
+    <h1>Number #3</h1><pre>Taking the bronze this week,
+you guessed it, another random 
+ video!</pre>
+    <div class="box">
+        <div style="background-color: #91300a;" class="card">
+            <iframe src="https://player.vimeo.com/video/414036312" width="640" height="360" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
+        </div>
+    </div>
+    <h1>Number #4</h1><pre>And last but not least,
+another video used as filler </pre>
+    <div class="box">
+        <div style=" background-color:#b87333" class="card">
+            <iframe src="https://player.vimeo.com/video/410459328" width="640" height="360" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
+        </div>
+    </div>
+</div>
+</body>
+<!----------------------
+  ###########   FOOTER   ##########
+------------------------>
+<footer >
+    <div class="footer">
+        <form method="GET" action="sub.html"  enctype="text/plain">
+            <label style="font-size: 20px; margin-left: 15%; background-color: azure; border: black double;" for="email">&nbsp;&nbsp;ENTER YOUR EMAIL & SUBSCRIBE TO OUR MAILING LIST NOW!&nbsp;&nbsp;</label>
+            <input class="email" type="email" name="email"  placeholder="email@example.com">
+            <button class="button" type="submit"><b>SUBSCRIBE</b></button>
+        </form>
+    </div>
+</footer>
+</html>

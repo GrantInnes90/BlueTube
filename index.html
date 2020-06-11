@@ -1,0 +1,160 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>BlueTube</title>
+        <link rel="stylesheet" href="style.css">
+        <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+        <link rel="icon" href="images/icon.png">
+      <style>
+      .logo img{
+        float: left;
+        margin-top: 8%;
+        margin-left: 12%;
+        position: static;
+      }
+      .main{
+        margin-top: 50px;
+        margin-bottom: 10%;
+        float: left;
+        margin-left: 2%;
+        background-color: #000000d5;
+        border: groove #0064fad5 5px;
+        border-radius: 1%;
+        width: 70%;
+        position: static; 
+      }
+      .main-container{
+        flex-direction: row;
+        margin-top: 30px;
+        margin-bottom: 15px;
+        margin-right: 15px;
+        margin-left: 15px;
+        display: flex;
+        flex-wrap: wrap;
+      }
+      .box {
+        background: rgb(10, 10, 10);
+        border: solid white;
+        flex: 1 1 0px;
+        transition: transform 300ms ease 100ms;
+        height: 200px;
+        border-radius: 20%;
+        box-shadow: 5px 10px 20px 10px #0064fad5;
+      }
+      .box:after {
+        display: block;
+        padding-top: 70%;
+      }
+      .box:nth-child(even) {
+        background: rgb(0, 0, 0);
+        border: solid white;
+      }
+      .main-container:hover .box {
+        transform: translateX(-15%);
+        transform: translateY(-15%);
+      }
+      .box:hover ~ .box {
+        transform: translateX(15%);
+        transform: translateY(15%);
+      }
+      .main-container .box:hover {
+        transform: scale(1.4);
+        z-index: 1;
+      }
+      .main iframe{
+        height: 200px;
+        width: 280px;
+      }
+      </style>
+  </head>
+<body>
+  <div class="logo">
+    <img src="images/logotop.png" width="700" height="180">
+  </div>
+   <!-----------------------
+    ########  Navigation bar  #########
+  -------------------------->
+  <div class="navbar" style="position: relative;">
+    <ul>
+      <li class="logo1"><img src="images/logo.png" alt="" width="100px" height="50px"></li>
+      <li style="border-left: solid black;"><a class="active" href="index.html">HOME</a></li>
+      <li><a href="page2.html">TOP PICKS</a></li>
+      <li><a href="about.html">ABOUT</a></li>
+      <li><a href="contact.html">CONTACT</a></li>
+      <div class="search-container">
+        <form action="#">
+          <input type="text" placeholder="Search"><button type="submit">🔍</button>
+        </form>
+      </div>
+    </ul>
+  </div>
+
+<!-------------------
+  #####  Section for right side menu #######
+--------------------->
+  <div class="flex-container-right">
+    <div><h2 class="right-text">Recommended Videos</h2>
+      <iframe src="https://player.vimeo.com/video/422893279" width="640" height="360" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
+        <p class="right-text">-Olympic Bounce</p>
+    </div>
+    <div>
+      <iframe src="https://player.vimeo.com/video/420963458" width="640" height="360" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
+        <p class="right-text">-Flatten the Curve</p>
+    </div>
+    <div>
+      <iframe src="https://player.vimeo.com/video/345245302?color=ffffff&portrait=0" width="640" height="360" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
+        <p class="right-text">-Shadow Passage</p></div>
+    <div>
+      <iframe src="https://player.vimeo.com/video/388446129" width="640" height="480" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
+        <p class="right-text">-Armstrong</p>
+    </div>
+</div>
+<!----------------------
+  ###########   Main section   ##########
+------------------------>
+<div class="main">
+  <div class="main-container" >
+    <div class="box">
+      <iframe src="https://player.vimeo.com/video/421964906" width="640" height="360" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
+    </div>
+    <div class="box">
+      <iframe src="https://player.vimeo.com/video/417790753" width="640" height="360" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
+    </div>
+    <div class="box">
+      <iframe src="https://player.vimeo.com/video/415845155" width="640" height="360" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
+    </div>
+    <div class="box"><iframe src="https://player.vimeo.com/video/419002366" width="640" height="360" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
+    </div>
+    <div class="box"><iframe src="https://player.vimeo.com/video/415540060" width="640" height="267" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
+    </div>
+    <div class="box"><iframe src="https://player.vimeo.com/video/415664640" width="640" height="360" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
+    </div>
+    <div class="box"><iframe src="https://player.vimeo.com/video/425216489" width="640" height="360" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
+    </div>
+    <div class="box"><iframe src="https://player.vimeo.com/video/411485636?color=ff1c4d" width="640" height="360" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
+    </div>   
+    <div class="box"><iframe src="https://player.vimeo.com/video/420082854" width="640" height="360" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
+    </div>
+    <div class="box"><iframe src="https://player.vimeo.com/video/421401695" width="640" height="360" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
+    </div>
+    <div class="box"><iframe src="https://player.vimeo.com/video/421544825" width="640" height="360" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
+    </div>
+    <div class="box"><iframe src="https://player.vimeo.com/video/413494928" width="640" height="360" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
+    </div>
+  </div>
+</div>
+</body>
+<!----------------------
+  ###########   FOOTER   ##########
+------------------------>
+  <footer >
+    <div class="footer">
+      <form method="GET" action="sub.html"  enctype="text/plain">
+        <label style="font-size: 20px; margin-left: 15%; background-color: azure; border: black double;" for="email">&nbsp;&nbsp;ENTER YOUR EMAIL & SUBSCRIBE TO OUR MAILING LIST NOW!&nbsp;&nbsp;</label>
+          <input class="email" type="email" name="email"  placeholder="email@example.com">
+          <button class="button" type="submit"><b>SUBSCRIBE</b></button>
+      </form>
+  </div>
+  </footer>
+</html>
